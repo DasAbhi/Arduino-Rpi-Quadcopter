@@ -17,12 +17,16 @@ void setup(){
 
 void loop(){
   
- pulse = 1150; 
+ //the upper throttle is 2442, however it can be pushed to 2443, but its not very reliable as i noticed the motors stuttering at this number.
+ //lower throttle is 1168
+  
+  
+  pulse = 2442; 
  
     digitalWrite(pin,HIGH);
     delayMicroseconds(pulse);
     digitalWrite(pin,LOW);
-    delayMicroseconds(18900);
+    delayMicroseconds(20000-pulse);
  
   
   
@@ -34,4 +38,5 @@ void loop(){
   } */
   
 }
+    
     
