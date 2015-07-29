@@ -17,7 +17,7 @@ void setup(){
 
 void loop(){
   
- pulse = 1150; 
+ pulse = 1350; 
  
     digitalWrite(pin,HIGH);
     delayMicroseconds(pulse);
